@@ -1,32 +1,53 @@
-BitVitor/
-│
-├─ index.html #Pagina Original
-├─ README.md
-│
-└── pages/
-    │   │    │
-    │   │   traduzida.html #Nome de Traduzir a Aba
-    │   └─── readmees.html #Nome dos ReadMe
-    │   │
-    │   │
-    │
-    ├─── locale/ # Nome das Linguas
-    │   │
-    │   ├─ de/ #alemao
-    │   │   │
-    │   │   ├── index.html #Pagina
-    │   │   └── readmes.html #ReadMe
-    │   │
-    │   │
-    │   ├─ en/ #Ingles
-    │   │   │
-    │   │   ├── index.html #Pagina
-    │   │   └── readmen.html #ReadMe
-    │   │
-    │   │
-    │   └─ es/ #espanhol
-                |
-    │   │   ├── index.html #Pagina
-    │   │   └── readmed.html #ReadMe
-    │
-└── style.css
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --hover-color: #0056b3;
+}
+
+.main-header {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.lang-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.lang-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.lang-link:hover {
+    color: var(--primary-color);
+}
