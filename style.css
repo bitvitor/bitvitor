@@ -12,7 +12,7 @@ BitVitor/
     │
     ├─── locale/ # Nome das Linguas
     │   │
-    │   ├─ es/ #Espanhol
+    │   ├─ de/ #alemao
     │   │   │
     │   │   ├── index.html #Pagina
     │   │   └── readmes.html #ReadMe
@@ -24,9 +24,9 @@ BitVitor/
     │   │   └── readmen.html #ReadMe
     │   │
     │   │
-    │   └─ de/ #Alma
+    │   └─ es/ #espanhol
                 |
     │   │   ├── index.html #Pagina
     │   │   └── readmed.html #ReadMe
     │
-└── arquivo.css
+└── style.css
