@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BitVitor - BitcoinCash (BCH): Elektronisches Peer-to-Peer digital geld. Lernen Sie, ohne staatliche Eingriffe zu zahlen und zu empfangen.">
+    <title>BitVitor - BitcoinCash (BCH) akzeptieren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bch-green: #0dc18e;
+            --bch-dark: #03202b;
+            --text-gray: #433d35;
+            --white: #ffffff;
+            --light-gray: #f4f7f6;
+            --danger: #f75555;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text-gray); background: var(--white); line-height: 1.6; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header & Nav */
+        header { background: var(--white); padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--bch-dark); text-decoration: none; }
+        .logo span { color: var(--bch-green); }
+        .lang-nav a { text-decoration: none; color: var(--bch-dark); font-size: 14px; margin-left: 15px; font-weight: bold; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 60px 20px; background: var(--light-gray); }
+        .hero h1 { font-size: 42px; color: var(--bch-dark); margin-bottom: 10px; }
+        .hero h2 { font-size: 20px; font-weight: 400; margin-bottom: 30px; }
+
+        /* Comparison Section */
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0; }
+        .card { padding: 30px; border-radius: 12px; border: 2px solid #eee; }
+        .card.bch { border-color: var(--bch-green); background: #f0fffb; }
+        .card h3 { margin-bottom: 20px; font-size: 22px; color: var(--bch-dark); }
+        .card ul { list-style: none; }
+        .card ul li { margin-bottom: 12px; padding-left: 25px; position: relative; }
+        .card ul li::before { content: "•"; color: var(--bch-green); position: absolute; left: 0; font-size: 20px; }
+
+        /* Wallets Section */
+        .section-title { text-align: center; font-size: 32px; margin: 60px 0 30px; color: var(--bch-dark); }
+        .wallet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .wallet-card { background: var(--bch-dark); color: white; padding: 25px; border-radius: 10px; text-align: center; text-decoration: none; transition: 0.3s; }
+        .wallet-card:hover { transform: translateY(-5px); background: #053a4d; }
+        .wallet-card h4 { font-size: 20px; margin-bottom: 10px; color: var(--bch-green); }
+
+        /* Instructions Box */
+        .instr-box { background: var(--bch-green); color: white; padding: 40px; border-radius: 15px; margin: 40px 0; }
+        .instr-box h3 { margin-bottom: 20px; }
+        .instr-box ol { margin-left: 20px; }
+        .instr-box ol li { margin-bottom: 10px; font-weight: bold; }
+
+        /* Backup & Security */
+        .security-section { background: #fff1f1; border: 2px solid var(--danger); padding: 30px; border-radius: 12px; margin: 40px 0; }
+        .security-section h3 { color: var(--danger); margin-bottom: 15px; }
+
+        /* Merchants Section */
+        .merchant-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .map-link { display: inline-block; background: var(--bch-dark); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+
+        /* Footer */
+        footer { background: var(--bch-dark); color: white; padding: 60px 0 30px; margin-top: 80px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-col h4 { color: var(--bch-green); margin-bottom: 20px; text-transform: uppercase; }
+        .footer-col p, .footer-col a { color: #ccc; font-size: 14px; text-decoration: none; display: block; margin-bottom: 10px; }
+        .social-row { display: flex; gap: 15px; margin-top: 10px; }
+        .social-row a { background: #1a3a47; padding: 8px 15px; border-radius: 5px; }
+
+        @media (max-width: 768px) {
+            .comparison-grid, .merchant-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-content">
+        <a href="/" class="logo">BitVitor<span>.com</span></a>
+        <div class="lang-nav">
+            <a href="index">PT</a>
+            <a href="index-en">EN</a>
+            <a href="index-es">ES</a>
+            <a href="#">DE</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>Der Wandel des Finanzsystems</h1>
+        <h2>BitcoinCash (BCH): Elektronisches Peer-to-Peer digital geld</h2>
+        <p>Beginnen Sie, Geld ohne staatliche Eingriffe zu nutzen.</p>
+    </section>
+
+    <h2 class="section-title">Systemmerkmale</h2>
+    <div class="comparison-grid">
+        <div class="card">
+            <h3>Aktuelles Finanzsystem</h3>
+            <ul>
+                <li>Inflationär (Unbegrenzte Emission)</li>
+                <li>Geografisch begrenzte Überweisungen</li>
+                <li>Gebühren, Steuern und Kontoführung</li>
+                <li>Einbeziehung von Vermittlern (Banken, Regierung)</li>
+                <li>System mit Verwahrung und Konfiskationsrisiko</li>
+                <li>Zentralisierte Kontrolle durch die Zentralbank</li>
+                <li>Transaktionen können zensiert werden</li>
+            </ul>
+        </div>
+        <div class="card bch">
+            <h3>Dezentrales System</h3>
+            <ul>
+                <li>Festes Angebot von 21 Millionen Einheiten</li>
+                <li>Deflationär und unendlich teilbar</li>
+                <li>Weltweit sofortige Überweisungen</li>
+                <li>Extrem niedrige Gebühren (ca. 0,005 EUR)</li>
+                <li>Ohne Vermittler, von Person zu Person</li>
+                <li>Keine Verwahrung und unmöglich zu konfiszieren</li>
+                <li>Hohes Maß an Privatsphäre und zensurresistent</li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="carteiras">
+        <h2 class="section-title">Installieren Sie Ihre Wallet in 5 Minuten</h2>
+        <div class="wallet-grid">
+            <a href="https://paytaca.com" class="wallet-card"><h4>Paytaca</h4><p>Ideal für Anfänger</p></a>
+            <a href="https://selene.cash" class="wallet-card"><h4>Selene</h4><p>Schnell und einfach</p></a>
+            <a href="https://cashonize.com" class="wallet-card"><h4>Cashonize</h4><p>Fortgeschrittene Funktionen</p></a>
+            <a href="https://wallet.bitcoin.com" class="wallet-card"><h4>Bitcoin.com</h4><p>Die beliebteste</p></a>
+        </div>
+
+        <div class="instr-box">
+            <h3>Installationsanleitung:</h3>
+            <ol>
+                <li>Laden Sie die App im Google Play Store oder App Store herunter.</li>
+                <li>Gehen Sie zu den Einstellungen und wählen Sie Ihre Sprache und Währung.</li>
+                <li>Führen Sie ein manuelles Backup durch (notieren Sie die 12 Wörter an einem sicheren Ort).</li>
+                <li>Fertig! Sie können jetzt mit BCH bezahlen und empfangen.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="security-section">
+        <h3>Backup & Sicherheit</h3>
+        <p>Die hier erwähnten Wallets sind <strong>non-custodial</strong> (selbstverwaltet). Das bedeutet, dass nur Sie Zugriff auf Ihr Vermögen haben.</p>
+        <p style="margin-top:10px;">Ihre Wiederherstellungsphrase aus 12 oder 24 Wörtern ist der Schlüssel zu Ihrem Geld. Wenn Sie diese Wörter verlieren, verlieren Sie den Zugriff auf Ihr Guthaben. <strong>Geben Sie diese niemals an Dritte weiter und speichern Sie sie nicht digital.</strong></p>
+    </section>
+
+    <section id="comerciantes">
+        <h2 class="section-title">Warum in Ihrem Unternehmen akzeptieren?</h2>
+        <div class="merchant-grid">
+            <div>
+                <h3>Vorteile für Händler:</h3>
+                <ul style="list-style: none; margin-top:15px;">
+                    <li>✅ <strong>Minimale Gebühren:</strong> Weniger als ein Cent pro Verkauf.</li>
+                    <li>✅ <strong>Keine Rückbuchungen:</strong> Zahlungen sind unumkehrbar und sicher.</li>
+                    <li>✅ <strong>Neue Kunden:</strong> Gewinnen Sie die wachsende Krypto-Community.</li>
+                    <li>✅ <strong>Kostenlose Werbung:</strong> Kostenlose Listung auf Weltkarten.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>POS-Tools:</h3>
+                <p>Nutzen Sie <strong>BitcoinCash Register</strong> oder <strong>POS.Cash</strong>, um professionell Zahlungen an der Ladentheke zu akzeptieren.</p>
+                <a href="https://map.bitcoin.com" class="map-link">Auf der Bitcoin.com Map erscheinen</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>Über BitVitor</h4>
+            <p>"Wir glauben, dass die Dezentralisierung der wirtschaftlichen Freiheit grundlegend für den Wohlstand ist."</p>
+            <p>Unsere Mission ist es, durch einfache Werkzeuge mehr wirtschaftliche Freiheit zu schaffen.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Kontakt</h4>
+            <p>E-Mail: BitVitor@proton.me</p>
+            <p>Telegram-Gruppen:</p>
+            <div class="social-row">
+                <a href="https://t.me/BCHPortugal">PT</a>
+                <a href="https://t.me/bchbrasil">BR</a>
+                <a href="https://t.me/bchchannel">EN</a>
+            </div>
+            <p style="margin-top:15px;">Twitter/X: @BitVitordotcom</p>
+        </div>
+        <div class="footer-col">
+            <h4>Mission</h4>
+            <p>Entwicklung zugänglicher Werkzeuge für jedermann, um Leid in der Welt zu verringern und echten Reichtum zu generieren.</p>
+        </div>
+    </div>
+    <div class="container" style="border-top: 1px solid #1a3a47; margin-top: 40px; padding-top: 20px; text-align: center; color: #888; font-size: 12px;">
+        &copy; 2026 BitVitor.com - Elektronisches Peer-to-Peer digital geld.
+    </div>
+</footer>
+
+</body>
+</html>
