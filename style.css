@@ -1,0 +1,32 @@
+BitVitor/
+│
+├─ index.html #Pagina Original
+├─ README.md
+│
+└── pages/
+    │   │    │
+    │   │   traduzida.html #Nome de Traduzir a Aba
+    │   └─── readmees.html #Nome dos ReadMe
+    │   │
+    │   │
+    │
+    ├─── locale/ # Nome das Linguas
+    │   │
+    │   ├─ es/ #Espanhol
+    │   │   │
+    │   │   ├── index.html #Pagina
+    │   │   └── readmes.html #ReadMe
+    │   │
+    │   │
+    │   ├─ en/ #Ingles
+    │   │   │
+    │   │   ├── index.html #Pagina
+    │   │   └── readmen.html #ReadMe
+    │   │
+    │   │
+    │   └─ de/ #Alma
+                |
+    │   │   ├── index.html #Pagina
+    │   │   └── readmed.html #ReadMe
+    │
+└── arquivo.css
