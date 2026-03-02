@@ -1,19 +1,16 @@
-:root {
-    --primary-color: #007bff;
-    --text-color: #333;
-    --bg-color: #ffffff;
-    --hover-color: #0056b3;
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .main-header {
-    background-color: var(--bg-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 1rem 0;
-    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -25,14 +22,14 @@
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 22px;
     text-decoration: none;
-    color: var(--text-color);
+    color: #333;
+    font-weight: bold;
 }
 
 .logo span {
-    color: var(--primary-color);
+    color: #007bff;
 }
 
 .lang-nav {
@@ -42,12 +39,11 @@
 
 .lang-link {
     text-decoration: none;
-    color: var(--text-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: #666;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
 .lang-link:hover {
-    color: var(--primary-color);
+    color: #007bff;
 }
