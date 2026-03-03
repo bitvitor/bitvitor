@@ -2,88 +2,59 @@
 <html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BitVitor - BitcoinCash (BCH)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="BitVitor - BitcoinCash (BCH): Moeda Eletrónica de Pessoa Para Pessoa. Aprenda a pagar e receber sem intervenção do Estado.">
-<title>BitVitor - Aceitar BitcoinCash (BCH)</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+
 <style>
 :root {
---bch-green: #0dc18e;
---bch-dark: #03202b;
---text-gray: #433d35;
---white: #ffffff;
---light-gray: #f4f7f6;
---danger: #f75555;
+  --bch-green:#0dc18e; --bch-dark:#03202b; --text-gray:#433d35; --white:#fff;
+  --light-gray:#f4f7f6; --danger:#f75555;
 }
-
-
-
-
-
-{ box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Montserrat', sans-serif; color: var(--text-gray); background: var(--white); line-height: 1.6; }
-
-.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-
-/* Header & Nav */
-header { background: var(--white); padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
-.nav-content { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 24px; font-weight: 800; color: var(--bch-dark); text-decoration: none; }
-.logo span { color: var(--bch-green); }
-.lang-nav a { text-decoration: none; color: var(--bch-dark); font-size: 14px; margin-left: 15px; font-weight: bold; }
-.lang-nav a:hover { text-decoration: underline; }
-
-/* Hero */
-.hero { text-align: center; padding: 60px 20px; background: var(--light-gray); }
-.hero h1 { font-size: 42px; color: var(--bch-dark); margin-bottom: 10px; }
-.hero h2 { font-size: 20px; font-weight: 400; margin-bottom: 30px; }
-
-/* Comparison Section */
-.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0; }
-.card { padding: 30px; border-radius: 12px; border: 2px solid #eee; }
-.card.bch { border-color: var(--bch-green); background: #e0f8e6; }
-.card h3 { margin-bottom: 20px; font-size: 22px; color: var(--bch-dark); }
-.card ul { list-style: none; }
-.card ul li { margin-bottom: 12px; padding-left: 25px; position: relative; }
-.card ul li::before { content: "•"; color: var(--bch-green); position: absolute; left: 0; font-size: 20px; }
-
-/* Wallets */
-.section-title { text-align: center; font-size: 32px; margin: 60px 0 30px; color: var(--bch-dark); }
-.wallet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-.wallet-card { background: var(--bch-dark); color: white; padding: 25px; border-radius: 10px; text-align: center; text-decoration: none; transition: 0.3s; }
-.wallet-card:hover { transform: translateY(-5px); background: #055d70; }
-.wallet-card h4 { font-size: 20px; margin-bottom: 10px; color: var(--bch-green); }
-
-/* Instructions */
-.instr-box { background: var(--bch-green); color: white; padding: 40px; border-radius: 15px; margin: 40px 0; }
-.instr-box h3 { margin-bottom: 20px; }
-.instr-box ol { margin-left: 20px; }
-.instr-box ol li { margin-bottom: 10px; font-weight: bold; }
-
-/* Backup & Security */
-.security-section { background: #fff1f1; border: 2px solid var(--danger); padding: 30px; border-radius: 12px; margin: 40px 0; }
-.security-section h3 { color: var(--danger); margin-bottom: 15px; }
-
-/* Merchants */
-.merchant-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.map-link { display: inline-block; background: var(--bch-dark); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; }
-.map-link:hover { background: #055d70; }
-
-/* Footer */
-footer { background: var(--bch-dark); color: white; padding: 60px 0 30px; margin-top: 80px; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
-.footer-col h4 { color: var(--bch-green); margin-bottom: 20px; text-transform: uppercase; }
-.footer-col p, .footer-col a { color: #ccc; font-size: 14px; text-decoration: none; display: block; margin-bottom: 10px; }
-.footer-col a:hover { color: #fff; }
-.social-row { display: flex; gap: 15px; margin-top: 10px; }
-.social-row a { background: #1a3a47; padding: 8px 15px; border-radius: 5px; }
-.social-row a:hover { background: #055d70; }
-
-@media (max-width: 768px) {
-.comparison-grid, .merchant-grid { grid-template-columns: 1fr; }
-.hero h1 { font-size: 32px; }
-}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Montserrat',sans-serif;color:var(--text-gray);background:var(--white);line-height:1.6;}
+.container{max-width:1100px;margin:0 auto;padding:0 20px;}
+header{background:var(--white);padding:20px 0;border-bottom:1px solid #eee;position:sticky;top:0;z-index:100;}
+.nav-content{display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:24px;font-weight:800;color:var(--bch-dark);text-decoration:none;}
+.logo span{color:var(--bch-green);}
+.lang-nav a{font-size:14px;margin-left:15px;font-weight:bold;text-decoration:none;color:var(--bch-dark);}
+.lang-nav a:hover{text-decoration:underline;}
+.hero{text-align:center;padding:60px 20px;background:var(--light-gray);}
+.hero h1{font-size:42px;color:var(--bch-dark);margin-bottom:10px;}
+.hero h2{font-size:20px;font-weight:400;margin-bottom:30px;}
+.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:40px 0;}
+.card{padding:30px;border-radius:12px;border:2px solid #eee;}
+.card.bch{border-color:var(--bch-green);background:#e0f8e6;}
+.card h3{margin-bottom:20px;font-size:22px;color:var(--bch-dark);}
+.card ul{list-style:none;}
+.card ul li{margin-bottom:12px;padding-left:25px;position:relative;}
+.card ul li::before{content:"•";color:var(--bch-green);position:absolute;left:0;font-size:20px;}
+.section-title{text-align:center;font-size:32px;margin:60px 0 30px;color:var(--bch-dark);}
+.wallet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.wallet-card{background:var(--bch-dark);color:white;padding:25px;border-radius:10px;text-align:center;text-decoration:none;transition:.3s;}
+.wallet-card:hover{transform:translateY(-5px);background:#055d70;}
+.wallet-card h4{font-size:20px;margin-bottom:10px;color:var(--bch-green);}
+.instr-box{background:var(--bch-green);color:white;padding:40px;border-radius:15px;margin:40px 0;}
+.instr-box h3{margin-bottom:20px;}
+.instr-box ol{margin-left:20px;}
+.instr-box ol li{margin-bottom:10px;font-weight:bold;}
+.security-section{background:#fff1f1;border:2px solid var(--danger);padding:30px;border-radius:12px;margin:40px 0;}
+.security-section h3{color:var(--danger);margin-bottom:15px;}
+.merchant-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.map-link{display:inline-block;background:var(--bch-dark);color:white;padding:15px 25px;border-radius:50px;text-decoration:none;font-weight:bold;margin-top:20px;}
+.map-link:hover{background:#055d70;}
+footer{background:var(--bch-dark);color:white;padding:60px 0 30px;margin-top:80px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;}
+.footer-col h4{color:var(--bch-green);margin-bottom:20px;text-transform:uppercase;}
+.footer-col p,.footer-col a{color:#ccc;font-size:14px;text-decoration:none;margin-bottom:10px;}
+.footer-col a:hover{color:#fff;}
+.social-row{display:flex;gap:15px;margin-top:10px;}
+.social-row a{background:#1a3a47;padding:8px 15px;border-radius:5px;}
+.social-row a:hover{background:#055d70;}
+@media (max-width:768px){ .comparison-grid,.merchant-grid{grid-template-columns:1fr;} .hero h1{font-size:32px;} }
 </style>
 </head>
 <body>
@@ -136,24 +107,7 @@ footer { background: var(--bch-dark); color: white; padding: 60px 0 30px; margin
 
 <section id="carteiras">
 <h2 class="section-title">Instale sua Carteira em 5 Minutos</h2>
-<div class="wallet-grid">
-<a href="https://paytaca.com" class="wallet-card" target="_blank" rel="noopener noreferrer">
-<h4>Paytaca</h4>
-<p>Ideal para iniciantes</p>
-</a>
-<a href="https://selene.cash" class="wallet-card" target="_blank" rel="noopener noreferrer">
-<h4>Selene</h4>
-<p>Rápido e simples</p>
-</a>
-<a href="https://cashonize.com" class="wallet-card" target="_blank" rel="noopener noreferrer">
-<h4>Cashonize</h4>
-<p>Recursos avançados</p>
-</a>
-<a href="https://wallet.bitcoin.com" class="wallet-card" target="_blank" rel="noopener noreferrer">
-<h4>Bitcoin.com</h4>
-<p>A mais popular</p>
-</a>
-</div>
+<div id="wallets-container" class="wallet-grid"></div>
 
 <div class="instr-box">
 <h3>Instruções de Instalação:</h3>
@@ -174,22 +128,7 @@ footer { background: var(--bch-dark); color: white; padding: 60px 0 30px; margin
 
 <section id="comerciantes">
 <h2 class="section-title">Porquê Aceitar no seu Negócio?</h2>
-<div class="merchant-grid">
-<div>
-<h3>Benefícios para Comerciantes:</h3>
-<ul style="list-style: none; margin-top:15px;">
-<li>✅ <strong>Taxas Mínimas:</strong> Menos de um centavo por venda.</li>
-<li>✅ <strong>Sem Estornos:</strong> Pagamentos são irreversíveis e seguros.</li>
-<li>✅ <strong>Novos Clientes:</strong> Atraia a crescente comunidade cripto.</li>
-<li>✅ <strong>Propaganda Grátis:</strong> Listagem gratuita em mapas mundiais.</li>
-</ul>
-</div>
-<div class="card">
-<h3>Ferramentas POS:</h3>
-<p>Use o <strong>BitcoinCash Register</strong> ou <strong>POS.Cash</strong> para aceitar pagamentos no balcão de forma profissional.</p>
-<a href="https://map.bitcoin.com" target="_blank" rel="noopener noreferrer" class="map-link">Aparecer no Mapa Bitcoin.com</a>
-</div>
-</div>
+<div id="merchant-grid" class="merchant-grid"></div>
 </section>
 </main>
 
@@ -216,9 +155,86 @@ footer { background: var(--bch-dark); color: white; padding: 60px 0 30px; margin
 <p>Desenvolvimento de ferramentas acessíveis para qualquer pessoa, diminuindo o sofrimento no mundo e gerando riqueza real.</p>
 </div>
 </div>
-<div class="container" style="border-top: 1px solid #1a3a47; margin-top: 40px; padding-top: 20px; text-align: center; color: #888; font-size: 12px;">
+<div class="container" style="border-top:1px solid #1a3a47;margin-top:40px;padding-top:20px;text-align:center;color:#888;font-size:12px;">
 © 2026 BitVitor.com - Dinheiro eletrónico de pessoa para pessoa.
 </div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const wallets = [
+    {name:"Paytaca", desc:"Ideal para iniciantes", url:"https://paytaca.com"},
+    {name:"Selene", desc:"Rápido e simples", url:"https://selene.cash"},
+    {name:"Cashonize", desc:"Recursos avançados", url:"https://cashonize.com"},
+    {name:"Bitcoin.com", desc:"A mais popular", url:"https://wallet.bitcoin.com"}
+  ];
+
+  const merchants = [
+    {
+      title:"Benefícios para Comerciantes:",
+      list:[
+        {icon:"✅", text:"Taxas Mínimas: Menos de um centavo por venda."},
+        {icon:"✅", text:"Sem Estornos: Pagamentos são irreversíveis e seguros."},
+        {icon:"✅", text:"Novos Clientes: Atraia a crescente comunidade cripto."},
+        {icon:"✅", text:"Propaganda Grátis: Listagem gratuita em mapas mundiais."}
+      ]
+    },
+    {
+      title:"Ferramentas POS:",
+      content:"Use o <strong>BitcoinCash Register</strong> ou <strong>POS.Cash</strong> para aceitar pagamentos no balcão de forma profissional.",
+      link:{text:"Aparecer no Mapa Bitcoin.com", url:"https://map.bitcoin.com"}
+    }
+  ];
+
+  const walletContainer = document.getElementById('wallets-container');
+  wallets.forEach(w => {
+    const a = document.createElement('a');
+    a.href = w.url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.className = "wallet-card";
+    a.innerHTML = `<h4>${w.name}</h4><p>${w.desc}</p>`;
+    walletContainer.appendChild(a);
+  });
+
+  const merchantContainer = document.getElementById('merchant-grid');
+  merchants.forEach(m => {
+    if (m.list) {
+      const card = document.createElement('div');
+      card.className = "card";
+      const h = document.createElement('h3');
+      h.innerHTML = m.title;
+      card.appendChild(h);
+      const ul = document.createElement('ul');
+      ul.style.listStyle = "none";
+      ul.style.marginTop = "15px";
+      m.list.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `${item.icon} <strong>${item.text}</strong>`;
+        ul.appendChild(li);
+      });
+      card.appendChild(ul);
+      merchantContainer.appendChild(card);
+    } else {
+      const card = document.createElement('div');
+      card.className = "card";
+      const h = document.createElement('h3');
+      h.textContent = m.title;
+      card.appendChild(h);
+      const p = document.createElement('p');
+      p.innerHTML = m.content;
+      card.appendChild(p);
+      const link = document.createElement('a');
+      link.href = m.link.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.className = "map-link";
+      link.textContent = m.link.text;
+      card.appendChild(link);
+      merchantContainer.appendChild(card);
+    }
+  });
+});
+</script>
 </body>
 </html>
