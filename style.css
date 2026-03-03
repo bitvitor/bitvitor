@@ -1,49 +1,32 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-}
-
-.main-header {
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    padding: 15px 0;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 22px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.logo span {
-    color: #007bff;
-}
-
-.lang-nav {
-    display: flex;
-    gap: 15px;
-}
-
-.lang-link {
-    text-decoration: none;
-    color: #666;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.lang-link:hover {
-    color: #007bff;
-}
+BitVitor/
+│
+├─ index.html #Pagina Original
+├─ README.md
+│
+└── pages/
+    │   │    │
+    │   │   traduzida.html #Nome de Traduzir a Aba
+    │   └─── readmees.html #Nome dos ReadMe
+    │   │
+    │   │
+    │
+    ├─── locale/ # Nome das Linguas
+    │   │
+    │   ├─ es/ #Espanhol
+    │   │   │
+    │   │   ├── index.html #Pagina
+    │   │   └── readmes.html #ReadMe
+    │   │
+    │   │
+    │   ├─ en/ #Ingles
+    │   │   │
+    │   │   ├── index.html #Pagina
+    │   │   └── readmen.html #ReadMe
+    │   │
+    │   │
+    │   └─ de/ #Alma
+                |
+    │   │   ├── index.html #Pagina
+    │   │   └── readmed.html #ReadMe
+    │
+└── arquivo.css
